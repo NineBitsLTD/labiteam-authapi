@@ -27,12 +27,12 @@
 	DB_USERNAME=root
 	DB_PASSWORD=
 ```
-### Install additional components
+### Install additional components from command line
 ```
 	composer require laravel/passport
 ```
 # Deployng
-### Deployng passport
+### Deployng passport from command line
 ```
 	php artisan migrate
 	php artisan passport:install
@@ -45,7 +45,7 @@
 ```
 ### Create routes - append to file authapi/routes/api.php
 	\Laravel\Passport\Passport::routes();
-### Check the routes - must be view in rows "POST|api/oauth/token|passport.token"
+### Check the routes from command line - must be view in rows "POST|api/oauth/token|passport.token"
 ```
 	php artisan route:list
 ```
@@ -83,7 +83,7 @@ class UsersTableSeeder extends Seeder
     }
 }
 ```
-### Fill table users in database
+### Fill table users in database from command line
 ```
 	php artisan db:seed
 ```
